@@ -1,0 +1,40 @@
+Please see below the code that I used to create Lot Tracking from item journal when I loaded data into Max coupling database.
+These code needs to be changed in part of Item Journal Parameters
+
+ItemJnlLine.COPYFILTERS(Rec);
+IF ItemJnlLine.FINDSET THEN
+REPEAT
+
+///// 1
+CreateReservEntry.SetDates(
+  0D, 0D);
+
+//// 2
+CreateReservEntry.CreateReservEntryFor(
+  DATABASE::"Item Journal Line",
+  ItemJnlLine."Entry Type",
+  ItemJnlLine."Journal Template Name",
+  ItemJnlLine."Journal Batch Name",
+  0,
+  ItemJnlLine."Line No.",
+  ItemJnlLine."Qty. per Unit of Measure",
+  ItemJnlLine.Quantity,
+  ItemJnlLine."Quantity (Base)",
+  '',
+  "Lot No.");
+
+//// 3
+
+CreateReservEntry.CreateEntry(
+  ItemJnlLine."Item No.",
+  ItemJnlLine."Variant Code",
+  ItemJnlLine."Location Code",
+  ItemJnlLine.Description,
+  ItemJnlLine."Posting Date",
+  ItemJnlLine."Document Date",
+  0,
+  2);
+UNTIL ItemJnlLine.NEXT = 0;
+
+MESSAGE('Done!');
+
