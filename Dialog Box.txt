@@ -1,0 +1,15 @@
+//<<RBN---
+ IF HideValidationDialog OR NOT GUIALLOWED THEN
+    Confirmed := TRUE
+  ELSE
+    Confirmed := CONFIRM(Text1101,FALSE,'.');
+        IF Confirmed THEN 
+          //If Condition
+       ELSE
+         //Else Condition
+//>>RBN---
+
+
+//HideValidationDialog->Boolean		
+//Confirmed-> Boolean
+//Message->Message for Dialog Box. Eg: Do you want to do ____
