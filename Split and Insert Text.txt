@@ -1,0 +1,15 @@
+//<<RBN 2.13.16 -- Splitting Description and Inserting some values. 
+//--Test := 'AAA bb X ccc DD';
+Description := Description+ ' ' + ' ' + ' '  + ' ' ; 
+BStringSplit := CONVERTSTR(Description,' ',',');
+BSubString1 := SELECTSTR(1,BStringSplit);
+BSubString2 := SELECTSTR(2,BStringSplit);
+BSubString3 := SELECTSTR(3,BStringSplit);
+BSubString4 := SELECTSTR(4,BStringSplit);
+BSubString5  := SELECTSTR(5,BStringSplit);
+//---------------
+BAddedString := CONVERTSTR("END Item2 Description",' ',',');
+BSubString2_Replace := SELECTSTR(1,BAddedString);
+BSubString4 := BSubString2_Replace;
+Description := BSubString1 + ' ' + BSubString2 +' ' +BSubString3 +' ' +BSubString4 +' ' +BSubString5;
+//>>RBN 2.13.16
