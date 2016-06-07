@@ -3,7 +3,7 @@ OBJECT Report 50001 Detail Trial Balance 2
   OBJECT-PROPERTIES
   {
     Date=06/07/16;
-    Time=[ 4:26:55 PM];
+    Time=[ 4:30:10 PM];
     Modified=Yes;
     Version List=NAVW19.00,NAVNA9.00;
   }
@@ -321,7 +321,7 @@ OBJECT Report 50001 Detail Trial Balance 2
   RDLDATA
   {
     <?xml version="1.0" encoding="utf-8"?>
-<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
@@ -329,7 +329,6 @@ OBJECT Report 50001 Detail Trial Balance 2
         <DataProvider>SQL</DataProvider>
         <ConnectString />
       </ConnectionProperties>
-      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>c396a512-e01c-4416-83e6-146281d0d75b</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -467,33 +466,33 @@ OBJECT Report 50001 Detail Trial Balance 2
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.62517in</Width>
+                  <Width>1.58793cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.78233in</Width>
+                  <Width>1.98712cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.31958in</Width>
+                  <Width>3.35173cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.9347in</Width>
+                  <Width>2.37414cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.9347in</Width>
+                  <Width>2.37414cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.9347in</Width>
+                  <Width>2.37414cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.93172in</Width>
+                  <Width>2.36657cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.68277in</Width>
+                  <Width>1.73424cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.13889in</Height>
+                  <Height>0.35278cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -503,7 +502,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -528,7 +527,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -554,7 +553,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -580,7 +579,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -607,7 +606,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=First(Fields!NetChangeCaption.Value)</Value>
+                                  <Value EvaluationMode="Auto">=First(Fields!NetChangeCaption.Value)</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -640,7 +639,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -666,7 +665,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -686,7 +685,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.13889in</Height>
+                  <Height>0.35278cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -696,7 +695,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -721,7 +720,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -747,7 +746,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -773,7 +772,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -799,7 +798,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIF(First(Fields!EmptyString.Value)="","...............................................................",First(Fields!EmptyString.Value))</Value>
+                                  <Value EvaluationMode="Auto">=IIF(First(Fields!EmptyString.Value)="","...............................................................",First(Fields!EmptyString.Value))</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -832,7 +831,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -858,7 +857,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -878,7 +877,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.13889in</Height>
+                  <Height>0.35278cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -889,7 +888,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Parameters!PostingDateCaption.Value</Value>
+                                  <Value EvaluationMode="Auto">=Parameters!PostingDateCaption.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -920,7 +919,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Parameters!DocNoCaption.Value</Value>
+                                  <Value EvaluationMode="Auto">=Parameters!DocNoCaption.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -950,7 +949,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Parameters!DescCaption.Value</Value>
+                                  <Value EvaluationMode="Auto">=Parameters!DescCaption.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -980,7 +979,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Parameters!VATAmtCaption.Value</Value>
+                                  <Value EvaluationMode="Auto">=Parameters!VATAmtCaption.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1012,7 +1011,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=First(Fields!GLEntryDebitAmtCaption.Value)</Value>
+                                  <Value EvaluationMode="Auto">=First(Fields!GLEntryDebitAmtCaption.Value)</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1044,7 +1043,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=First(Fields!GLEntryCreditAmtCaption.Value)</Value>
+                                  <Value EvaluationMode="Auto">=First(Fields!GLEntryCreditAmtCaption.Value)</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1076,7 +1075,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=First(Fields!GLBalCaption.Value)</Value>
+                                  <Value EvaluationMode="Auto">=First(Fields!GLBalCaption.Value)</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1108,7 +1107,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Parameters!EntryNoCaption.Value</Value>
+                                  <Value EvaluationMode="Auto">=Parameters!EntryNoCaption.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1133,7 +1132,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.06944in</Height>
+                  <Height>0.17638cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1144,7 +1143,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1175,7 +1174,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.06944in</Height>
+                  <Height>0.17638cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1186,7 +1185,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1223,7 +1222,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.13889in</Height>
+                  <Height>0.35278cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1233,7 +1232,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!No_GLAcc.Value</Value>
+                                  <Value EvaluationMode="Auto">=Fields!No_GLAcc.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1264,7 +1263,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Name_GLAcc.Value</Value>
+                                  <Value EvaluationMode="Auto">=Fields!Name_GLAcc.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1295,7 +1294,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1325,7 +1324,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1355,7 +1354,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1386,7 +1385,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!StartBalance.Value</Value>
+                                  <Value EvaluationMode="Auto">=Fields!StartBalance.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1416,7 +1415,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1440,7 +1439,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.13889in</Height>
+                  <Height>0.35278cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1451,7 +1450,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIF(Fields!ClosingEntry.Value,"C"+Fields!PostingDate_GLEntry.Value,Fields!PostingDate_GLEntry.Value)</Value>
+                                  <Value EvaluationMode="Auto">=IIF(Fields!ClosingEntry.Value,"C"+Fields!PostingDate_GLEntry.Value,Fields!PostingDate_GLEntry.Value)</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1483,7 +1482,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!DocumentNo_GLEntry.Value</Value>
+                                  <Value EvaluationMode="Auto">=Fields!DocumentNo_GLEntry.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1513,7 +1512,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Description_GLEntry.Value</Value>
+                                  <Value EvaluationMode="Auto">=Fields!Description_GLEntry.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1543,7 +1542,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!VATAmount_GLEntry.Value</Value>
+                                  <Value EvaluationMode="Auto">=Fields!VATAmount_GLEntry.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1574,7 +1573,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Code.BlankZero(Fields!DebitAmount_GLEntry.Value)</Value>
+                                  <Value EvaluationMode="Auto">=Code.BlankZero(Fields!DebitAmount_GLEntry.Value)</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1607,7 +1606,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Code.BlankZero(Fields!CreditAmount_GLEntry.Value)</Value>
+                                  <Value EvaluationMode="Auto">=Code.BlankZero(Fields!CreditAmount_GLEntry.Value)</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1640,7 +1639,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!GLBalance.Value</Value>
+                                  <Value EvaluationMode="Auto">=Fields!GLBalance.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1671,7 +1670,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!EntryNo_GLEntry.Value</Value>
+                                  <Value EvaluationMode="Auto">=Fields!EntryNo_GLEntry.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1696,7 +1695,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.13889in</Height>
+                  <Height>0.35278cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1706,7 +1705,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1742,7 +1741,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Name_GLAcc.Value</Value>
+                                  <Value EvaluationMode="Auto">=Fields!Name_GLAcc.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1781,7 +1780,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIF((CountDistinct(Fields!VATAmount_GLEntry.Value)=0)and(First(Fields!VATAmount_GLEntry.Value)=0),0,Sum(Fields!VATAmount_GLEntry.Value))</Value>
+                                  <Value EvaluationMode="Auto">=IIF((CountDistinct(Fields!VATAmount_GLEntry.Value)=0)and(First(Fields!VATAmount_GLEntry.Value)=0),0,Sum(Fields!VATAmount_GLEntry.Value))</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1820,7 +1819,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Code.BlankZero(Sum(Fields!DebitAmount_GLEntry.Value))</Value>
+                                  <Value EvaluationMode="Auto">=Code.BlankZero(Sum(Fields!DebitAmount_GLEntry.Value))</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1860,7 +1859,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Code.BlankZero(Sum(Fields!CreditAmount_GLEntry.Value))</Value>
+                                  <Value EvaluationMode="Auto">=Code.BlankZero(Sum(Fields!CreditAmount_GLEntry.Value))</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1900,7 +1899,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIF(Parameters!VATAmount_GLEntryCaption.Value&lt;&gt;"", Last(Fields!GLBalance.Value),Fields!StartBalance.Value)</Value>
+                                  <Value EvaluationMode="Auto">=IIF(Parameters!VATAmount_GLEntryCaption.Value&lt;&gt;"", Last(Fields!GLBalance.Value),Fields!StartBalance.Value)</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1938,7 +1937,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -1969,7 +1968,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.13889in</Height>
+                  <Height>0.35278cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -1980,7 +1979,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -2012,7 +2011,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -2045,7 +2044,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -2078,7 +2077,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -2111,7 +2110,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -2144,7 +2143,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -2177,7 +2176,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -2210,7 +2209,7 @@ OBJECT Report 50001 Detail Trial Balance 2
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value />
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -2348,7 +2347,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
             </PageBreak>
             <Top>1.44825cm</Top>
             <Height>2.82222cm</Height>
-            <Width>18.15008cm</Width>
+            <Width>18.15cm</Width>
             <Style />
           </Tablix>
           <Textbox Name="GLAccountTABLECAPTIONGLFilter">
@@ -2357,7 +2356,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=First(Fields!GLAccTableCaption.Value)</Value>
+                    <Value EvaluationMode="Auto">=First(Fields!GLAccTableCaption.Value)</Value>
                     <Style>
                       <FontStyle>Normal</FontStyle>
                       <FontFamily>Segoe UI</FontFamily>
@@ -2386,23 +2385,23 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>7.14567in</Width>
+                  <Width>18.15cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.13889in</Height>
+                  <Height>0.35278cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="textbox45">
+                        <Textbox Name="Textbox23">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=First(Fields!BalanceCaption.Value)</Value>
+                                  <Value EvaluationMode="Auto" />
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -2413,8 +2412,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>textbox45</rd:DefaultName>
-                          <ZIndex>2</ZIndex>
+                          <rd:DefaultName>Textbox23</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingRight>5pt</PaddingRight>
@@ -2425,7 +2423,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.13889in</Height>
+                  <Height>0.35278cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -2436,7 +2434,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=First(Fields!PeriodCaption.Value)</Value>
+                                  <Value EvaluationMode="Auto">=First(Fields!PeriodCaption.Value)</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -2459,7 +2457,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.13889in</Height>
+                  <Height>0.35278cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -2469,7 +2467,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!OnlyCorrectionsCaption.Value</Value>
+                                  <Value EvaluationMode="Auto">=Fields!OnlyCorrectionsCaption.Value</Value>
                                   <Style>
                                     <FontStyle>Normal</FontStyle>
                                     <FontFamily>Segoe UI</FontFamily>
@@ -2522,6 +2520,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
+            <Top>0.13962in</Top>
             <Height>1.05834cm</Height>
             <Width>18.15cm</Width>
             <ZIndex>2</ZIndex>
@@ -2538,7 +2537,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
       <Width>18.15008cm</Width>
       <Page>
         <PageHeader>
-          <Height>2.14312cm</Height>
+          <Height>2.52828cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -2548,7 +2547,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!DetailTrialBalCaption.Value,"DataSet_Result")</Value>
+                      <Value EvaluationMode="Auto">=First(Fields!DetailTrialBalCaption.Value,"DataSet_Result")</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>14pt</FontSize>
@@ -2571,7 +2570,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!CompanyName.Value,"DataSet_Result")</Value>
+                      <Value EvaluationMode="Auto">=First(Fields!CompanyName.Value,"DataSet_Result")</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2596,7 +2595,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!PeriodGLDtFilter.Value,"DataSet_Result")</Value>
+                      <Value EvaluationMode="Auto">=First(Fields!PeriodGLDtFilter.Value,"DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -2621,7 +2620,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Globals!ExecutionTime</Value>
+                      <Value EvaluationMode="Auto">=Globals!ExecutionTime</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -2650,7 +2649,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=User!UserID</Value>
+                      <Value EvaluationMode="Auto">=User!UserID</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -2678,7 +2677,7 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=First(Fields!PageCaption.Value,"DataSet_Result") &amp; " " &amp; Globals!PageNumber</Value>
+                      <Value EvaluationMode="Auto">=First(Fields!PageCaption.Value,"DataSet_Result") &amp; " " &amp; Globals!PageNumber</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -2700,11 +2699,39 @@ Fields!EntryNo_GLEntry.Value&lt;=0 or
                 <VerticalAlign>Middle</VerticalAlign>
               </Style>
             </Textbox>
+            <Textbox Name="Textbox24">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">Test</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox24</rd:DefaultName>
+              <Top>1.92828cm</Top>
+              <Left>9.15141cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.5cm</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
           </ReportItems>
           <Style />
         </PageHeader>
-        <PageHeight>11in</PageHeight>
-        <PageWidth>8.5in</PageWidth>
         <InteractiveHeight>11in</InteractiveHeight>
         <InteractiveWidth>8.5in</InteractiveWidth>
         <LeftMargin>1.76388cm</LeftMargin>
