@@ -37,4 +37,4 @@ CreateReservEntry.CreateEntry(
 UNTIL ItemJnlLine.NEXT = 0;
 
 MESSAGE('Done!');
-
+//Modofied for Version 03
