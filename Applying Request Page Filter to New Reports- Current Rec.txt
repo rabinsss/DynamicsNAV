@@ -1,0 +1,4 @@
+//RBN
+lSalesHeader.SETRANGE("No.","No."); //Local Sales Header Variable just to hold the current values of Sales Order
+REPORT.RUNMODAL("Report ID", TRUE, FALSE, lSalesHeader); //Passing the Filter Variable to Request Page. 
+//RBN
