@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Microsoft Dynamics NAV\90\RoleTailored Client\Microsoft.Dynamics.Nav.Client.exe""dynamicsnav://localhost/DynamicsNAV90/CRONUS Canada, Inc./runpage?page=15"
