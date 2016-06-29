@@ -1,0 +1,3 @@
+//RBN
+//For Dynamics Text size as per lenght of Value, we can use this code in FONT Size Expression
+=IIf(Len(Fields!FieldName.Value) <= 30, “9pt”, “6pt”)
