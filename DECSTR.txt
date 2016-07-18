@@ -1,0 +1,44 @@
+DecStr(IcodIncoming : Code[20];IintStep : Integer) OcodReturnCode : Code[20]
+// DecStr //> 104 
+// Like the NAVISION INCSTR-function but DECREASING 
+// PARAMETERS: 
+// IcodIncoming : String to be decreased (if this string does not contain a number, an empty string is returned) 
+// IintStep : Decrement with this value (if it is negative, an empty string will be returned) 
+// (if it is 0, the value of "IcodIncoming" will be returned) 
+// RETURN-VALUE : decreased string 
+
+// in some cases, just exit 
+IF IintStep = 0 THEN 
+EXIT(IcodIncoming); 
+IF IintStep < 0 THEN 
+EXIT(''); 
+IF IcodIncoming = '' THEN 
+EXIT(''); 
+
+LcodAllowedChars := '1234567890'; 
+LintLen := STRLEN(IcodIncoming); 
+LintStartOfNumericPart := LintLen; 
+
+// search the last not numeric character 
+WHILE (STRPOS(LcodAllowedChars,COPYSTR(IcodIncoming,LintStartOfNumericPart,1)) <> 0) DO 
+LintStartOfNumericPart -= 1; 
+
+// start of numeric part 
+LintStartOfNumericPart += 1; 
+
+IF LintStartOfNumericPart > LintLen THEN 
+EXIT(''); // no numeric part found at right end of the string 
+
+EVALUATE(Lint,COPYSTR(IcodIncoming,LintStartOfNumericPart)); 
+
+Lint -= IintStep; 
+
+IF Lint < 0 THEN 
+ERROR(LtxcNegative,IcodIncoming,IintStep,Lint); 
+
+LcodAllowedChars := FORMAT(Lint); 
+
+OcodReturnCode := 
+COPYSTR(IcodIncoming,1,LintStartOfNumericPart - 1) + 
+PADSTR('',LintLen - LintStartOfNumericPart - STRLEN(LcodAllowedChars) + 1,'0') + 
+LcodAllowedChars;
