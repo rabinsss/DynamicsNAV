@@ -1,0 +1,9 @@
+declare two char variables char13,char10
+
+char13 :=13;
+
+char10:=10;
+
+text:= text1 +format(char13)+format(char10)+ text2;
+
+its will print in next line
