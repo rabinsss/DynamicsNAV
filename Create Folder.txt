@@ -1,0 +1,31 @@
+//Creating New Folder using C/AL
+
+Code Simple:
+DirectoryHelper.CreateDirectory(directory);
+//Here the varialbe in NET type with the sub type "'mscorlib'.System.IO.Directory"
+//---------------------------------------------------------------
+
+Code Full:
+PROCEDURE CreateNewDir_gFnc@33027956(OldFilePath_iTxt@33027923 : Text;NewDirectoryName_iTxt@33027924 : Text[50];VAR AttDir_vTxt@33027927 : Text);
+    VAR
+      DirectoryHelper@33027920 : DotNet "'mscorlib'.System.IO.Directory" RUNONCLIENT;
+      directory@33027921 : Text;
+      FileMgt_lCdu@33027922 : Codeunit 419;
+      PathHelper@33027925 : DotNet "'mscorlib'.System.IO.Path";
+      SystemDirectoryServer_lDnt@33027926 : DotNet "'MSCORLIB'.System.IO.Directory";
+    BEGIN
+      // Get the directory from the OldFilePath, if directory is empty it will just use the current location.
+      directory := FileMgt_lCdu.GetDirectoryName(OldFilePath_iTxt);
+
+      NewDirectoryName_iTxt := DELCHR(NewDirectoryName_iTxt,'=','#%&*:<>?\/{|}~');
+
+      // create the sub directory name is name is given
+      IF NewDirectoryName_iTxt <> '' THEN BEGIN
+        directory := PathHelper.Combine(directory,NewDirectoryName_iTxt);
+
+        IF NOT SystemDirectoryServer_lDnt.Exists(directory) THEN
+          DirectoryHelper.CreateDirectory(directory);
+      END;
+
+      AttDir_vTxt := directory;
+    END;
